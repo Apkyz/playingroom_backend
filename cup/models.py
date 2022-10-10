@@ -12,5 +12,5 @@ class Match(models.Model):
     player2 = models.ForeignKey(Duelist, on_delete=models.CASCADE, related_name='player2')
     deck2 = models.ForeignKey(Deck, on_delete=models.CASCADE, related_name='deck2')
     winner = models.ForeignKey(Duelist, on_delete=models.CASCADE, related_name='winner')
-    status = models.CharField()
+    status = models.CharField(max_length = 50)
     
